@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://hdrqm8vjp55x" path="res://sprites/stacked/Reception.png" id="2_x0md4"]
 [ext_resource type="Texture2D" uid="uid://cx6kyvb3xy6tn" path="res://sprites/stacked/Door.png" id="3_x0md4"]
 [ext_resource type="PackedScene" uid="uid://bm8fxyaydk0wf" path="res://src/player.tscn" id="4_s21lr"]
-[ext_resource type="Texture2D" uid="uid://2t2il3ng50lb" path="res://sprites/artwork/TestArt.png" id="5_w01xx"]
 
 [node name="Room" type="Node2D" unique_id=1706778646]
 
@@ -20,12 +19,12 @@ hframes = 10
 stack_texture = ExtResource("2_x0md4")
 sprite_width = 40.0
 
-[node name="Door" parent="Stacked" unique_id=216951363 instance=ExtResource("1_beawo")]
+[node name="Door_0" parent="Stacked" unique_id=216951363 instance=ExtResource("1_beawo")]
 position = Vector2(46, 24)
 hframes = 21
 stack_texture = ExtResource("3_x0md4")
 
-[node name="Door2" parent="Stacked" unique_id=1551437004 instance=ExtResource("1_beawo")]
+[node name="Door_1" parent="Stacked" unique_id=1551437004 instance=ExtResource("1_beawo")]
 position = Vector2(17, 69)
 hframes = 21
 stack_texture = ExtResource("3_x0md4")
@@ -33,8 +32,3 @@ stack_rotation = 1.5699999999999998
 
 [node name="Player" parent="." unique_id=144679231 instance=ExtResource("4_s21lr")]
 position = Vector2(115, 62)
-
-[node name="TestArt" type="Sprite2D" parent="." unique_id=1822864398]
-position = Vector2(311, 58)
-scale = Vector2(0.59375, 0.59375)
-texture = ExtResource("5_w01xx")

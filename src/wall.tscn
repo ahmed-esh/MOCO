@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://da8l645edevqb"]
+
+[ext_resource type="Script" uid="uid://c0jyghcbusbrh" path="res://src/wall.gd" id="1_dnfwo"]
+
+[node name="Wall" type="Node2D" unique_id=1227432485]
+position = Vector2(43, 55)
+script = ExtResource("1_dnfwo")
+wall_color = Color(0.78431374, 0.7058824, 0.5882353, 1)
+top_color = Color(0.8627451, 0.81960785, 0.72156864, 1)
+
+[node name="Line2D" type="Line2D" parent="." unique_id=2042885526]
+points = PackedVector2Array(-1, 1, 18, 10, 38, 2, 60, 2, 80, 2, 107, 5, 133, 0)
+
+[node name="Walls" type="Node2D" parent="." unique_id=852671790]
