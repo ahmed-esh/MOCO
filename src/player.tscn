@@ -9,3 +9,13 @@ script = ExtResource("1_gmfve")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1290942849]
 scale = Vector2(0.171875, 0.171875)
 texture = ExtResource("1_lowyb")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=319346336]
+ignore_rotation = false
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1147969074]
+custom_minimum_size = Vector2(20, 20)
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
