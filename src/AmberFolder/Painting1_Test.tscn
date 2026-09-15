@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dkjvu6j5wyryx"]
+
+[ext_resource type="PackedScene" uid="uid://dggx4lnpjr3mc" path="res://src/AmberFolder/Camel_Head.tscn" id="1_t55qn"]
+[ext_resource type="PackedScene" uid="uid://ddjqry3uh718b" path="res://src/AmberFolder/Painting1.tscn" id="2_bkeck"]
+[ext_resource type="PackedScene" uid="uid://c1lkmnkgwj7mk" path="res://src/AmberFolder/Camel_Leg1.tscn" id="3_bkeck"]
+
+[node name="Painting1Test" type="Node2D" unique_id=90606800]
+
+[node name="Painting1" parent="." unique_id=1748648789 instance=ExtResource("2_bkeck")]
+
+[node name="CamelHead" parent="." unique_id=463789914 instance=ExtResource("1_t55qn")]
+position = Vector2(-41, -85)
+
+[node name="CamelLeg1" parent="." unique_id=1764131843 instance=ExtResource("3_bkeck")]
+position = Vector2(-31, 9)

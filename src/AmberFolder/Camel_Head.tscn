@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dggx4lnpjr3mc"]
+
+[ext_resource type="Texture2D" uid="uid://bjbj0oqopujqu" path="res://sprites/Camel_Pieces/camel_head.png" id="1_pltmd"]
+
+[node name="CamelHead" type="Node2D" unique_id=463789914]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=501540972]
+texture = ExtResource("1_pltmd")
