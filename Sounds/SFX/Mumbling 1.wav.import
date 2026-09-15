@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bdm0yqhaea0ao"
+path="res://.godot/imported/Mumbling 1.wav-d45d40ce1d0db74741136cbe6742040e.sample"
+
+[deps]
+
+source_file="res://Sounds/SFX/Mumbling 1.wav"
+dest_files=["res://.godot/imported/Mumbling 1.wav-d45d40ce1d0db74741136cbe6742040e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
