@@ -1,6 +1,16 @@
 [gd_scene format=3 uid="uid://3g52o7hwoxnh"]
 
 [ext_resource type="Script" uid="uid://c230xv5sm7301" path="res://src/globals.gd" id="1_y0mlk"]
+[ext_resource type="AudioStream" uid="uid://bdm0yqhaea0ao" path="res://Sounds/SFX/Mumbling 1.wav" id="2_pccdw"]
+[ext_resource type="AudioStream" uid="uid://gpwakbd03jmi" path="res://Sounds/SFX/mumbling 2.wav" id="3_bx3m2"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_sm8mx"]
+streams_count = 2
+stream_0/stream = ExtResource("2_pccdw")
+stream_1/stream = ExtResource("3_bx3m2")
 
 [node name="Globals" type="Node" unique_id=1604865328]
 script = ExtResource("1_y0mlk")
+
+[node name="MumbleSFX" type="AudioStreamPlayer" parent="." unique_id=928409798]
+stream = SubResource("AudioStreamRandomizer_sm8mx")

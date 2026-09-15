@@ -3,9 +3,6 @@
 [ext_resource type="Script" uid="uid://c54g6iwppokw8" path="res://src/painting_preset.gd" id="1_wx4uc"]
 [ext_resource type="Texture2D" uid="uid://b5mnsc4cg5led" path="res://sprites/Painitngs/2024_CKS_22681_0037_000(ludwig_deutsch_the_answer121237).jpg" id="2_v0i6x"]
 [ext_resource type="Texture2D" uid="uid://dsdpvdkuga4ax" path="res://sprites/Painitngs/pngtree-camel-isolated-on-a-transparent-background-png-image_16393769.png" id="3_dy3bl"]
-[ext_resource type="Texture2D" uid="uid://f1xgsytwkvrx" path="res://sprites/Painitng picese/1.png" id="4_3ujsi"]
-[ext_resource type="Texture2D" uid="uid://cmhfkt58ksp7d" path="res://sprites/Painitng picese/2.png" id="5_7nc8o"]
-[ext_resource type="Texture2D" uid="uid://dn6i2gakyvg70" path="res://sprites/Painitng picese/3.png" id="6_qquwk"]
 
 [node name="Painting preset" type="Control" unique_id=694673423]
 layout_mode = 3
@@ -52,36 +49,6 @@ offset_top = 72.0
 offset_right = 121.0
 offset_bottom = 80.0
 texture = ExtResource("3_dy3bl")
-expand_mode = 1
-
-[node name="CamelClue1" type="TextureRect" parent="." unique_id=34867963]
-visible = false
-layout_mode = 0
-offset_left = 136.0
-offset_top = 2.0
-offset_right = 160.0
-offset_bottom = 26.0
-texture = ExtResource("4_3ujsi")
-expand_mode = 1
-
-[node name="CamelClue2" type="TextureRect" parent="." unique_id=505937606]
-visible = false
-layout_mode = 0
-offset_left = 136.0
-offset_top = 2.0
-offset_right = 160.0
-offset_bottom = 26.0
-texture = ExtResource("5_7nc8o")
-expand_mode = 1
-
-[node name="CamelClue3" type="TextureRect" parent="." unique_id=654170623]
-visible = false
-layout_mode = 0
-offset_left = 136.0
-offset_top = 2.0
-offset_right = 160.0
-offset_bottom = 26.0
-texture = ExtResource("6_qquwk")
 expand_mode = 1
 
 [connection signal="gui_input" from="ThePainintg/SmallCamel1" to="." method="SmallCamel1"]
