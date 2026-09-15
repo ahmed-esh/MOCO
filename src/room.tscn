@@ -1,15 +1,37 @@
 [gd_scene format=3 uid="uid://b1fdc2pip0ob5"]
 
 [ext_resource type="PackedScene" uid="uid://chcn5ouy8lo4m" path="res://src/stacked/stacked_sprite.tscn" id="1_beawo"]
+[ext_resource type="PackedScene" uid="uid://da8l645edevqb" path="res://src/wall.tscn" id="1_w01xx"]
 [ext_resource type="Texture2D" uid="uid://hdrqm8vjp55x" path="res://sprites/stacked/Reception.png" id="2_x0md4"]
 [ext_resource type="Texture2D" uid="uid://cx6kyvb3xy6tn" path="res://sprites/stacked/Door.png" id="3_x0md4"]
 [ext_resource type="PackedScene" uid="uid://bm8fxyaydk0wf" path="res://src/player.tscn" id="4_s21lr"]
 
 [node name="Room" type="Node2D" unique_id=1706778646]
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1563241306]
-offset_right = 187.0
-offset_bottom = 138.0
+[node name="Background" type="CanvasLayer" parent="." unique_id=830896477]
+layer = -5
+
+[node name="OutsideBG" type="ColorRect" parent="Background" unique_id=1367248371]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2509804, 0.24705882, 0.2901961, 1)
+
+[node name="Floor" type="ColorRect" parent="." unique_id=1563241306]
+offset_right = 217.0
+offset_bottom = 124.0
+color = Color(0.5686275, 0.5882353, 0.627451, 1)
+
+[node name="Walls" type="Node2D" parent="." unique_id=1622093426]
+visible = false
+
+[node name="Wall" parent="Walls" unique_id=1227432485 instance=ExtResource("1_w01xx")]
+height = 8
+
+[node name="Line2D" parent="Walls/Wall" index="0" unique_id=2042885526]
+points = PackedVector2Array(0, 0, 215, 0, 217, 124, 0, 124, 0, 0)
 
 [node name="Stacked" type="Node2D" parent="." unique_id=653831215]
 
@@ -20,15 +42,17 @@ stack_texture = ExtResource("2_x0md4")
 sprite_width = 40.0
 
 [node name="Door_0" parent="Stacked" unique_id=216951363 instance=ExtResource("1_beawo")]
-position = Vector2(46, 24)
+position = Vector2(45, 4)
 hframes = 21
 stack_texture = ExtResource("3_x0md4")
 
 [node name="Door_1" parent="Stacked" unique_id=1551437004 instance=ExtResource("1_beawo")]
-position = Vector2(17, 69)
+position = Vector2(1, 64)
 hframes = 21
 stack_texture = ExtResource("3_x0md4")
 stack_rotation = 1.5699999999999998
 
 [node name="Player" parent="." unique_id=144679231 instance=ExtResource("4_s21lr")]
 position = Vector2(115, 62)
+
+[editable path="Walls/Wall"]
