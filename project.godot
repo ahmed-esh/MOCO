@@ -22,8 +22,8 @@ UiOfCamelSolutions="*uid://2dq3hkutgt4k"
 
 [display]
 
-window/size/viewport_width=192
-window/size/viewport_height=108
+window/size/viewport_width=240
+window/size/viewport_height=160
 window/size/window_width_override=720
 window/size/window_height_override=480
 window/stretch/mode="canvas_items"
