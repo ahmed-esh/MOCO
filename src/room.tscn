@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://b1fdc2pip0ob5"]
+
+[ext_resource type="PackedScene" uid="uid://chcn5ouy8lo4m" path="res://src/stacked/stacked_sprite.tscn" id="1_beawo"]
+[ext_resource type="Texture2D" uid="uid://hdrqm8vjp55x" path="res://sprites/stacked/Reception.png" id="2_x0md4"]
+[ext_resource type="Texture2D" uid="uid://cx6kyvb3xy6tn" path="res://sprites/stacked/Door.png" id="3_x0md4"]
+[ext_resource type="PackedScene" uid="uid://bm8fxyaydk0wf" path="res://src/player.tscn" id="4_s21lr"]
+
+[node name="Room" type="Node2D" unique_id=1706778646]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1563241306]
+offset_right = 187.0
+offset_bottom = 138.0
+
+[node name="Stacked" type="Node2D" parent="." unique_id=653831215]
+
+[node name="Reception" parent="Stacked" unique_id=1743490350 instance=ExtResource("1_beawo")]
+position = Vector2(81, 88)
+hframes = 10
+stack_texture = ExtResource("2_x0md4")
+sprite_width = 40.0
+
+[node name="Door" parent="Stacked" unique_id=216951363 instance=ExtResource("1_beawo")]
+position = Vector2(36, 30)
+hframes = 21
+stack_texture = ExtResource("3_x0md4")
+
+[node name="Door2" parent="Stacked" unique_id=1551437004 instance=ExtResource("1_beawo")]
+position = Vector2(15, 80)
+hframes = 21
+stack_texture = ExtResource("3_x0md4")
+stack_rotation = 1.5699999999999998
+
+[node name="Player" parent="." unique_id=144679231 instance=ExtResource("4_s21lr")]
+position = Vector2(127, 73)
