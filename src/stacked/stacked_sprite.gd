@@ -6,6 +6,8 @@ var player_ref : Node2D = null
 @onready var start_position : Vector2 = global_position
 @onready var start_angle : float = global_position.angle()
 
+var bob_offset = 0.0
+
 @export var stack_texture : Texture2D = null :
 	set(value):
 		stack_texture = value
@@ -45,7 +47,8 @@ func update_stack_direction():
 		var camera_rotation = 0.0 if Engine.is_editor_hint() else Globals.Rotation
 		var next_sprite = $Stack.get_child(i)
 		var start_offset = Vector2.UP.rotated(camera_rotation)
-		next_sprite.position = Vector2.UP.rotated(camera_rotation) * i
+		var bob = Vector2.UP.rotated(camera_rotation) * bob_offset
+		next_sprite.position = Vector2.UP.rotated(camera_rotation) * i + bob
 
 func set_stack_rotation(rot):
 	if not has_node("Stack"):

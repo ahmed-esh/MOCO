@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bm8fxyaydk0wf"]
+
+[ext_resource type="Script" uid="uid://8yuhwxe1yrxb" path="res://src/player.gd" id="1_gmfve"]
+[ext_resource type="PackedScene" uid="uid://chcn5ouy8lo4m" path="res://src/stacked/stacked_sprite.tscn" id="2_gmfve"]
+[ext_resource type="Texture2D" uid="uid://8kk2v10d7dr4" path="res://sprites/stacked/Camel.png" id="3_ehvfd"]
+
+[node name="Player" type="Node2D" unique_id=144679231 groups=["Player"]]
+script = ExtResource("1_gmfve")
+
+[node name="Stack" parent="." unique_id=1743490350 instance=ExtResource("2_gmfve")]
+hframes = 10
+stack_texture = ExtResource("3_ehvfd")
+sprite_width = 40.0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=319346336]
+ignore_rotation = false
+position_smoothing_enabled = true
+rotation_smoothing_enabled = true
+rotation_smoothing_speed = 15.0
