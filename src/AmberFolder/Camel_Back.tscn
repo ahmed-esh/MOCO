@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://doudbnf7h3hxq"]
-
-[ext_resource type="Texture2D" uid="uid://dn41x7caj5vnq" path="res://sprites/Camel_Pieces/camel_back.png" id="1_kph5y"]
-
-[node name="CamelBack" type="Node2D" unique_id=711835498]
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1104521803]
-texture = ExtResource("1_kph5y")

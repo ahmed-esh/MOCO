@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://byr5s2gbaw8s8"
+path="res://.godot/imported/solving puzzel 1_editedmp3.mp3-258bcc206fcd1e557b5482f2b4a29e14.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Theme_Music/solving puzzel 1_editedmp3.mp3"
+dest_files=["res://.godot/imported/solving puzzel 1_editedmp3.mp3-258bcc206fcd1e557b5482f2b4a29e14.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

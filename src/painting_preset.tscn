@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://ben0c5mxnj6qs"]
+
+[ext_resource type="Script" uid="uid://c54g6iwppokw8" path="res://src/painting_preset.gd" id="1_qkuq4"]
+[ext_resource type="Texture2D" uid="uid://qah6mn66dk4p" path="res://sprites/Painitngs/painting1.png" id="2_qkuq4"]
+[ext_resource type="Texture2D" uid="uid://bjbj0oqopujqu" path="res://sprites/Camel_Pieces/camel_head.png" id="3_c2jg3"]
+[ext_resource type="Texture2D" uid="uid://ctocqisqpqhds" path="res://sprites/Camel_Pieces/camel_leg.png" id="4_2gss2"]
+
+[node name="Painting 1" type="Control" unique_id=694673423]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_qkuq4")
+
+[node name="BackGround" type="ColorRect" parent="." unique_id=1099552752]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 108.0
+color = Color(0.05490196, 1, 1, 1)
+
+[node name="ThePainintg" type="TextureRect" parent="." unique_id=583612200]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 2.9999998
+offset_right = 168.0
+offset_bottom = 233.0
+scale = Vector2(0.44000244, 0.44000244)
+texture = ExtResource("2_qkuq4")
+
+[node name="SmallCamel1" type="TextureRect" parent="ThePainintg" unique_id=1690043569]
+layout_mode = 0
+offset_left = 27.272575
+offset_top = 20.454432
+offset_right = 54.272575
+offset_bottom = 39.45443
+texture = ExtResource("3_c2jg3")
+
+[node name="SmallCamel2" type="TextureRect" parent="ThePainintg" unique_id=831684263]
+layout_mode = 0
+offset_left = 43.18158
+offset_top = 111.36302
+offset_right = 58.18158
+offset_bottom = 134.36302
+texture = ExtResource("4_2gss2")
+
+[connection signal="gui_input" from="ThePainintg/SmallCamel1" to="." method="SmallCamel1"]
+[connection signal="gui_input" from="ThePainintg/SmallCamel2" to="." method="SmallCamel2"]

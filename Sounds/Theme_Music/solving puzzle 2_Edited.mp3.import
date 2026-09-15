@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://5lm6hbk5cgml"
+path="res://.godot/imported/solving puzzle 2_Edited.mp3-267fa731c696f62feec8ff9f4068370e.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Theme_Music/solving puzzle 2_Edited.mp3"
+dest_files=["res://.godot/imported/solving puzzle 2_Edited.mp3-267fa731c696f62feec8ff9f4068370e.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
