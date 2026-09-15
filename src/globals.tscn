@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c230xv5sm7301" path="res://src/globals.gd" id="1_y0mlk"]
 [ext_resource type="AudioStream" uid="uid://bdm0yqhaea0ao" path="res://Sounds/SFX/Mumbling 1.wav" id="2_pccdw"]
 [ext_resource type="AudioStream" uid="uid://gpwakbd03jmi" path="res://Sounds/SFX/mumbling 2.wav" id="3_bx3m2"]
+[ext_resource type="Script" uid="uid://c2dneoj0pt1xb" path="res://src/audio_stream_player.gd" id="4_bx3m2"]
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_sm8mx"]
 streams_count = 2
@@ -14,3 +15,6 @@ script = ExtResource("1_y0mlk")
 
 [node name="MumbleSFX" type="AudioStreamPlayer" parent="." unique_id=928409798]
 stream = SubResource("AudioStreamRandomizer_sm8mx")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1214911483]
+script = ExtResource("4_bx3m2")
