@@ -5,6 +5,10 @@
 [ext_resource type="Texture2D" uid="uid://hdrqm8vjp55x" path="res://sprites/stacked/Reception.png" id="2_x0md4"]
 [ext_resource type="Texture2D" uid="uid://cx6kyvb3xy6tn" path="res://sprites/stacked/Door.png" id="3_x0md4"]
 [ext_resource type="PackedScene" uid="uid://bm8fxyaydk0wf" path="res://src/player.tscn" id="4_s21lr"]
+[ext_resource type="Texture2D" uid="uid://coe27103bodb3" path="res://sprites/stacked/Stacked_Painting1.png" id="5_qeqgd"]
+[ext_resource type="Texture2D" uid="uid://dcqbu4j4tfutv" path="res://sprites/stacked/Stacked_poles.png" id="6_7p3l7"]
+[ext_resource type="Texture2D" uid="uid://cke6etxfyd4uk" path="res://sprites/stacked/Stacked_Painting2.png" id="7_i8u4b"]
+[ext_resource type="Texture2D" uid="uid://bx07pn6f7rbkk" path="res://sprites/stacked/Stacked_lights.png" id="8_i8u4b"]
 
 [node name="Room" type="Node2D" unique_id=1706778646]
 
@@ -51,6 +55,36 @@ position = Vector2(1, 64)
 hframes = 21
 stack_texture = ExtResource("3_x0md4")
 stack_rotation = 1.5699999999999998
+
+[node name="Painting1" parent="Stacked" unique_id=695150332 instance=ExtResource("1_beawo")]
+position = Vector2(173, 4)
+hframes = 21
+stack_texture = ExtResource("5_qeqgd")
+
+[node name="ploes2" parent="Stacked" unique_id=1659469986 instance=ExtResource("1_beawo")]
+position = Vector2(173, 127)
+hframes = 13
+stack_texture = ExtResource("6_7p3l7")
+stack_rotation = 3.14
+
+[node name="Painting2" parent="Stacked" unique_id=1539088526 instance=ExtResource("1_beawo")]
+position = Vector2(173, 140)
+hframes = 21
+stack_texture = ExtResource("7_i8u4b")
+stack_rotation = 3.14
+
+[node name="ploes1" parent="Stacked" unique_id=1682543386 instance=ExtResource("1_beawo")]
+position = Vector2(173, 10)
+hframes = 13
+stack_texture = ExtResource("6_7p3l7")
+stack_rotation = 3.14
+
+[node name="lights" parent="Stacked" unique_id=560857078 instance=ExtResource("1_beawo")]
+position = Vector2(194, 37)
+rotation = 0.00011671029
+hframes = 11
+stack_texture = ExtResource("8_i8u4b")
+stack_rotation = 3.14
 
 [node name="Player" parent="." unique_id=144679231 instance=ExtResource("4_s21lr")]
 position = Vector2(115, 62)

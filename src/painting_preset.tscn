@@ -5,6 +5,9 @@
 [ext_resource type="Texture2D" uid="uid://bjbj0oqopujqu" path="res://sprites/Camel_Pieces/camel_head.png" id="3_c2jg3"]
 [ext_resource type="Texture2D" uid="uid://ctocqisqpqhds" path="res://sprites/Camel_Pieces/camel_leg.png" id="4_2gss2"]
 
+[sub_resource type="Theme" id="Theme_6abiu"]
+default_font_size = 5
+
 [node name="Painting 1" type="Control" unique_id=694673423]
 layout_mode = 3
 anchors_preset = 0
@@ -12,8 +15,9 @@ script = ExtResource("1_qkuq4")
 
 [node name="BackGround" type="ColorRect" parent="." unique_id=1099552752]
 layout_mode = 0
-offset_right = 192.0
+offset_right = 162.16217
 offset_bottom = 108.0
+scale = Vector2(1.48, 1.48)
 color = Color(0.05490196, 1, 1, 1)
 
 [node name="ThePainintg" type="TextureRect" parent="." unique_id=583612200]
@@ -22,7 +26,7 @@ offset_left = 8.0
 offset_top = 2.9999998
 offset_right = 168.0
 offset_bottom = 233.0
-scale = Vector2(0.44000244, 0.44000244)
+scale = Vector2(0.65120363, 0.65120363)
 texture = ExtResource("2_qkuq4")
 
 [node name="SmallCamel1" type="TextureRect" parent="ThePainintg" unique_id=1690043569]
@@ -35,11 +39,20 @@ texture = ExtResource("3_c2jg3")
 
 [node name="SmallCamel2" type="TextureRect" parent="ThePainintg" unique_id=831684263]
 layout_mode = 0
-offset_left = 43.18158
-offset_top = 111.36302
-offset_right = 58.18158
-offset_bottom = 134.36302
+offset_left = 3.0712357
+offset_top = 112.10011
+offset_right = 18.071236
+offset_bottom = 135.10011
 texture = ExtResource("4_2gss2")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1920112638]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 54.0
+offset_right = 235.0
+offset_bottom = 94.0
+scale = Vector2(0.84000003, 0.84000003)
+theme = SubResource("Theme_6abiu")
 
 [connection signal="gui_input" from="ThePainintg/SmallCamel1" to="." method="SmallCamel1"]
 [connection signal="gui_input" from="ThePainintg/SmallCamel2" to="." method="SmallCamel2"]

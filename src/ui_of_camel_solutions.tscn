@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://2dq3hkutgt4k"]
 
 [ext_resource type="Script" uid="uid://ck5j7swapq2s4" path="res://src/ui_of_camel_solutions.gd" id="1_t7k3g"]
-[ext_resource type="Texture2D" uid="uid://dn41x7caj5vnq" path="res://sprites/Camel_Pieces/camel_back.png" id="2_2nfha"]
-[ext_resource type="Texture2D" uid="uid://bjbj0oqopujqu" path="res://sprites/Camel_Pieces/camel_head.png" id="3_oav6c"]
-[ext_resource type="Texture2D" uid="uid://cicsa4mew32o0" path="res://sprites/Camel_Pieces/camel_leg2.png" id="4_hp11j"]
-[ext_resource type="Texture2D" uid="uid://ctocqisqpqhds" path="res://sprites/Camel_Pieces/camel_leg.png" id="5_ec7fb"]
+[ext_resource type="Texture2D" uid="uid://cr8w5e0iu2k7b" path="res://sprites/Puzzle_Pieces/puzzle2.png" id="2_eqkwr"]
+[ext_resource type="Texture2D" uid="uid://ca5vmjd8ndusx" path="res://sprites/Puzzle_Pieces/puzzle4.png" id="3_t7k3g"]
+[ext_resource type="Texture2D" uid="uid://b1frd7fhitra0" path="res://sprites/Puzzle_Pieces/puzzle1.png" id="4_2nfha"]
+[ext_resource type="Texture2D" uid="uid://bpgxyjb343i5t" path="res://sprites/Puzzle_Pieces/puzzle3.png" id="5_oav6c"]
 
 [node name="UI" type="CanvasLayer" unique_id=288372411]
 layer = 5
@@ -21,33 +21,36 @@ mouse_filter = 2
 
 [node name="CamelClue1" type="TextureRect" parent="UI" unique_id=1709047039]
 layout_mode = 0
-offset_left = 161.0
-offset_top = 5.0
-offset_right = 185.0
-offset_bottom = 29.0
-texture = ExtResource("2_2nfha")
+offset_left = 202.0
+offset_top = 6.0
+offset_right = 354.0
+offset_bottom = 166.0
+scale = Vector2(0.19999483, 0.19999483)
+texture = ExtResource("2_eqkwr")
 
-[node name="CamelClue2" type="TextureRect" parent="UI" unique_id=1268054829]
+[node name="CamelClue2" type="TextureRect" parent="UI" unique_id=607329848]
 layout_mode = 0
-offset_left = 149.0
-offset_top = 2.0
-offset_right = 176.0
-offset_bottom = 26.0
-scale = Vector2(0.6000049, 0.6000049)
-texture = ExtResource("3_oav6c")
+offset_left = 202.0
+offset_top = 6.0
+offset_right = 354.0
+offset_bottom = 166.0
+scale = Vector2(0.19999483, 0.19999483)
+texture = ExtResource("3_t7k3g")
 
-[node name="CamelClue3" type="TextureRect" parent="UI" unique_id=289789940]
+[node name="CamelClue3" type="TextureRect" parent="UI" unique_id=2128455437]
 layout_mode = 0
-offset_left = 149.0
-offset_top = 17.0
-offset_right = 173.0
-offset_bottom = 41.0
-texture = ExtResource("4_hp11j")
+offset_left = 202.0
+offset_top = 6.0
+offset_right = 354.0
+offset_bottom = 166.0
+scale = Vector2(0.19999483, 0.19999483)
+texture = ExtResource("4_2nfha")
 
-[node name="CamelClue4" type="TextureRect" parent="UI" unique_id=939011906]
+[node name="CamelClue4" type="TextureRect" parent="UI" unique_id=1234497728]
 layout_mode = 0
-offset_left = 167.0
-offset_top = 22.0
-offset_right = 191.0
-offset_bottom = 46.0
-texture = ExtResource("5_ec7fb")
+offset_left = 202.0
+offset_top = 6.0
+offset_right = 354.0
+offset_bottom = 166.0
+scale = Vector2(0.19999483, 0.19999483)
+texture = ExtResource("5_oav6c")
